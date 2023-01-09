@@ -8,10 +8,9 @@ Hello! Welcome to a user creation form that was built using React. This form all
 * Follow the prompts to specify your project name and choose React + JavaScript
 
 **Installation**
-    1. Clone the repo
-    `git clone https://github.com/kangjay88/fetakehome-usercreationform.git `
-    2. Run `npm install` to install the necessary dependencies (listed in Dependencies)
-    3. Run `npm run dev` to start your development server and view form in selected browser
+1. Clone the repo `git clone https://github.com/kangjay88/fetakehome-usercreationform.git `
+2. Run `npm install` to install the necessary dependencies (listed in Dependencies)
+3. Run `npm run dev` to start your development server and view form in selected browser
 
 **Dependencies: Make sure these are installed!**
 `npm install <dependency>`
