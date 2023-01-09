@@ -2,12 +2,12 @@
 Hello! Welcome to a user creation form that was built using React. This form allows users to sign up with their name, email, password, occupation, and state. In this respository you will see the use of basic form validation, sass CSS, and custom hooks for form submission and data fetching.
 
 ## Getting Started
-**Prerequisites**
+**Prerequisites**:
 * This project was built using Vite + React + JavaScript:
 `$npm create vite@latest`
 * Follow the prompts to specify your project name and choose React + JavaScript
 
-**Installation**
+**Installation**:
 1. Clone the repo `git clone https://github.com/kangjay88/fetakehome-usercreationform.git `
 2. Run `npm install` to install the necessary dependencies (listed in Dependencies)
 3. Run `npm run dev` to start your development server and view form in selected browser
@@ -22,12 +22,12 @@ Hello! Welcome to a user creation form that was built using React. This form all
 * sass
 
 ## Usage
-**App.jsx**
+**App.jsx**:
 The `App` component is designated as our highest component, wrapping the `UserForm` component in a `Query Client Provider` from the `react-query` library.
 * Gives access to `react-query` everywhere in our application
 * Useful for `useQuery` and `useMutation`
 
-**UserForm.jsx**
+**UserForm.jsx**:
 The `UserForm` component is what is used for a user to sign up with their information. Here we use a number of react hooks and libraries, as well as some custom hooks that are explained later on. 
 ```
 const [userData, setUserData] = useState({
@@ -97,7 +97,7 @@ const handleSubmit = (event) => {
 * Leaves form open to resubmission, don't have to reset everything
 
 ## Usage of Custom Hooks
-**useSubmitForm**
+**useSubmitForm**:
 The `useSubmitForm` is a custom hook made using `{ useMutation }` from `react-query` library. This handles form submission by sending a POST request to an API with form data as the request body. 
 ```
 export function useSubmitForm ()  {
@@ -129,7 +129,7 @@ const {mutate: submitForm, ...rest} = useMutation(postForm, {
 * returns an object from the submitForm function 
 * `...rest` allows desired/additional properties to be included in the returned object along with submitForm
 
-**useGetFetchAPI** 
+**useGetFetchAPI**:
 This is another custom hook made using `{ useQuery }` from `react-query` library. This handles a GET request to an API and retrieve data from the response.
 ```
 export function useGetFetchAPI () {
@@ -147,7 +147,7 @@ things to improve upon:
 react-hook-forms has a library that allows user validation code to be much simpler and compact, (...validator)
 right now, the logic and html are sort of all in one place -> this could be handled differently using usecontext hook
 
-##Custom Hooks 
+## Custom Hooks
 These custom hooks are used in the `UserForm` component:
 ```
 const { submitForm } = useSubmitForm();
