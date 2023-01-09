@@ -15,6 +15,7 @@
     "react-hook-form": "^7.41.5",
     "react-query": "^3.39.2",
     "react-select": "^5.7.0",
+    "sass": "^1.57.1",
     "simple-react-validator": "^1.6.2",
     "validator": "^13.7.0"
   },

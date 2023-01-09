@@ -13,7 +13,7 @@ export function useSubmitForm ()  {
         return axios.post(`https://frontend-take-home.fetchrewards.com/form`, request) 
     }
     const {mutate: submitForm, ...rest} = useMutation(postForm, {
-        onSuccess: (data) => {console.log(data.data, data.status); return data},
+        onSuccess: (data) => {console.log(data.data, data.status); return data}, 
         onError: (error) => {console.error(data.status); return error}
     })
     return{

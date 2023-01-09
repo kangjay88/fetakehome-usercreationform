@@ -6,5 +6,4 @@ export function useGetFetchAPI () {
         const res = await axios.get("https://frontend-take-home.fetchrewards.com/form");
         return res.data;
     });
-
 }
